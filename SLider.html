@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="slider.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="slides">
+        <img src="./images/nature-3082832_1920.jpg" class="active"/>
+        <img src="./images/sunrise-1014712_1920.jpg" />
+        <img src="./images/flowers-276014_1920 (1).jpg" />
+        <img src="./images/ocean-3605547_1920.jpg" />
+      </div>
+      <div class="buttons">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+      </div>
+      <div class="dotsContainer">
+        <div class="dot active" attr="0"></div>
+        <div class="dot" attr="1"></div>
+        <div class="dot" attr="2"></div>
+        <div class="dot" attr="3"></div>
+      </div>
+    </div>
+    <script>
+        let slideImages = document.querySelectorAll('img');
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+        let dots = document.querySelectorAll('.dot')
+    </script>
+  </body>
+</html>
